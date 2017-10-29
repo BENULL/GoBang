@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/banner.jpg</file>
+        <file>image/back.png</file>
+        <file>image/computer.png</file>
+        <file>image/new.png</file>
+        <file>image/person.png</file>
+        <file>image/quit.png</file>
+        <file>image/screenshot.png</file>
+        <file>image/home.png</file>
+        <file>image/net.png</file>
+        <file>image/gobang.ico</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameWindow</class>
+ <widget class="QMainWindow" name="GameWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>人人对战</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/image/image/gobang.ico</normaloff>:/image/image/gobang.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="blackTime">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>490</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>OCR A Std</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>05-00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="whiteTime">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>200</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>OCR A Std</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>05-00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>160</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文行楷</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>倒计时</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>450</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文行楷</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>倒计时 </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>开始</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>新游戏</string>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/image/image/new.png</normaloff>:/image/image/new.png</iconset>
+     </property>
+     <addaction name="actionPeople"/>
+     <addaction name="actionComputer"/>
+     <addaction name="actionNet"/>
+    </widget>
+    <addaction name="menu_4"/>
+    <addaction name="actionHome"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>游戏</string>
+    </property>
+    <addaction name="actionBack"/>
+    <addaction name="actionScreenshot"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/quit.png</normaloff>:/image/image/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionBack">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/back.png</normaloff>:/image/image/back.png</iconset>
+   </property>
+   <property name="text">
+    <string>悔棋</string>
+   </property>
+  </action>
+  <action name="actionPeople">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/person.png</normaloff>:/image/image/person.png</iconset>
+   </property>
+   <property name="text">
+    <string>人人对战</string>
+   </property>
+  </action>
+  <action name="actionComputer">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/computer.png</normaloff>:/image/image/computer.png</iconset>
+   </property>
+   <property name="text">
+    <string>人机对战</string>
+   </property>
+  </action>
+  <action name="actionScreenshot">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/screenshot.png</normaloff>:/image/image/screenshot.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存棋局</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/home.png</normaloff>:/image/image/home.png</iconset>
+   </property>
+   <property name="text">
+    <string>回到菜单</string>
+   </property>
+  </action>
+  <action name="actionNet">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/image/image/net.png</normaloff>:/image/image/net.png</iconset>
+   </property>
+   <property name="text">
+    <string>局域网对战</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
