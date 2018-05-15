@@ -30,6 +30,6 @@ FROM: JXUFE
 
 QQ  : 327137362
 
-BLOG: http://blog.luonull.xin
+BLOG: http://blog.benull.top
 
 Email : ltobenull@gmail.com 
